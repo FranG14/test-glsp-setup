@@ -20,15 +20,6 @@
 					<profiles>JavaSE-17</profiles>
 				</configuration>
 			</plugin>
-			<!-- Skip cleaning of this module otherwise the release build is not working 
-				on the jenkins instance -->
-			<plugin>
-				<artifactId>maven-clean-plugin</artifactId>
-				<version>3.1.0</version>
-				<configuration>
-					<skip>false</skip>
-				</configuration>
-			</plugin>
 			<plugin>
 				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>tycho-p2-director-plugin</artifactId>
